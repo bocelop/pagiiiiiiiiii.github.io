@@ -1,0 +1,85 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffd700;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    text-align: center;
+    padding: 50px;
+    color: #333;
+}
+
+.greeting {
+    font-size: 3em;
+    animation: fadeIn 1s ease;
+}
+
+.heart {
+    font-size: 0.8em;
+    color: #ff4500;
+}
+
+.message {
+    font-size: 1.2em;
+    margin-top: 20px;
+    padding: 20px; /* Menambahkan padding untuk memisahkan teks dari tepi */
+    background-color: rgba(255, 255, 255, 0.8); /* Latar belakang semi-transparan */
+    border-radius: 10px; /* Membuat sudut elemen sedikit melengkung */
+    animation: fadeIn 1s ease;
+}
+
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.image {
+    width: 200px;
+    margin: 0 20px;
+    transition: transform 0.3s ease;
+}
+
+.image:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.button-container {
+    margin-top: 30px;
+}
+
+button {
+    padding: 10px 30px;
+    font-size: 1em;
+    background-color: #ff4500;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #dc3545;
+    transform: scale(1.1);
+}
+
+.reminder {
+    display: none;
+    font-size: 1.2em;
+    color: #333;
+    margin-top: 20px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
